@@ -10,6 +10,7 @@ class CounterBloc extends Bloc<CounterEvent, CounterState> {
     });
   }
 }
+
 // The CounterInitial class should extend the CounterState class
 class CounterInitial extends CounterState {
   CounterInitial({required super.counterValue, required super.wasIncremented});
