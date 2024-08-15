@@ -13,6 +13,14 @@ class CounterBloc extends Bloc<CounterEvent, CounterState> {
 }
 
 // The CounterInitial class should extend the CounterState class
+class CounterState {
+  final int counterValue;
+  final bool wasIncremented;
+
+  CounterState({required this.counterValue, required this.wasIncremented});
+}
+
 class CounterInitial extends CounterState {
-  CounterInitial({required super.counterValue, required super.wasIncremented});
+  CounterInitial({required int counterValue, required bool wasIncremented})
+      : super(counterValue: counterValue, wasIncremented: wasIncremented);
 }
