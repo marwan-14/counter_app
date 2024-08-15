@@ -9,6 +9,7 @@ class CounterBloc extends Bloc<CounterEvent, CounterState> {
       // TODO: implement event handler
     });
   }
+
 }
 
 // The CounterInitial class should extend the CounterState class
